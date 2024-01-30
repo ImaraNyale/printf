@@ -18,7 +18,7 @@ int printf_decimal(va_list args)
 
 	if (num < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		printed++;
 		num = -num;
 	}
@@ -30,7 +30,7 @@ int printf_decimal(va_list args)
 	while (num_digits > 0)
 	{
 		digit = num / power(10, num_digits - 1);
-		_putchar('0' + digit);
+		putchar('0' + digit);
 		printed++;
 		num %= power(10, num_digits - 1);
 		num_digits--;

@@ -26,8 +26,8 @@ int _printf(const char *format, ...)
 			{
 				if (format[j + 1] != 'c' && format[j + 1] != 's' && format[j + 1] != '%' && format[j + 1] != 'd' && format[j +1] != 'i')
 				{
-					k += _putchar(format[j]);
-					k += _putchar(format[j + 1]);
+					k += putchar(format[j]);
+					k += putchar(format[j + 1]);
 					j++;
 				}
 				else if (format[j + 1] == 'd' || format[j + 1] == 'i')
@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(format[j]);
+			putchar(format[j]);
 			k++;
 		}
 		j++;

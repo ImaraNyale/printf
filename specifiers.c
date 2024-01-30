@@ -10,7 +10,7 @@ int printf_char(va_list args)
 {
 	char c = va_arg(args, int);
 
-	_putchar(c);
+	putchar(c);
 	return (1);
 }
 
@@ -31,7 +31,7 @@ int printf_string(va_list args)
 	}
 	while (string[i] != '\0')
 	{
-		_putchar(string[i]);
+		putchar(string[i]);
 		i++;
 	}
 	return (i);
@@ -47,6 +47,6 @@ int printf_percent(va_list args)
 {
 	(void)args;
 
-	_putchar('%');
+	putchar('%');
 	return (1);
 }
